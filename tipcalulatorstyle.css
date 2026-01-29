@@ -1,0 +1,37 @@
+/* .container {
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin: 50px 0px 50px 0px;
+    padding: 50px 50px 50px 50px;
+    background-color: antiquewhite;
+}
+
+.displayGroup {
+    border: 1px solid gray;
+}
+
+.total {
+    padding: 20px 0px 0px 10px;
+    font-size: 1.5rem;
+}
+
+.tipDiv {
+    padding: 20px 0px 0px 10px;
+    margin: 10px;
+}
+
+.formClass {
+    margin: 0px 10px;
+} */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.btn-success {
+    font-weight: 600;
+}

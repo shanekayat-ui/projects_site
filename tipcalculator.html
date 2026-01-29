@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="tipcalulator.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="audio.html">Audio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tools
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="currency.html">Currency Converter</a></li>
+            <li><a class="dropdown-item" href="tipcalculator.html">Tip Calculator</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="tools.html">All Tools</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+        <div class="container">
+           <!-- Alternate Floating Home button: 
+        <div class="mt-3">
+            <a href="index.html" class="btn btn-secondary btn-sm">← Back to Home</a>
+        </div> -->
+
+<body class="bg-light">
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h2 class="card-title text-center mb-4">Tip Calculator</h2>
+                        <div class="mb-3 text-danger" id="alertValidAmount"></div>
+                        <form id="formGroup">
+                            <div class="mb-3">
+                                <label for="bill" class="form-label">Enter the Bill amount:</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">R</span>
+                                    <input type="number" id="bill" step="0.01" class="form-control" placeholder="0.00">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="percentage" class="form-label">Tip Percentage:</label>
+                                <select name="percentage" id="percentage" class="form-select">
+                                    <option value="10">10</option>
+                                    <option value="15">15</option>
+                                    <option value="20">20</option>
+                                    <option value="25">25</option>
+                                </select>
+                            </div>
+                            
+                            <button onclick="displayTip()" type="button" class="btn btn-success w-100 mb-3" id="button">Calculate Tip</button>
+                        </form>
+                        
+                        <div class="alert alert-info">
+                            <strong><span id="percentDisplay">20</span>% tip:</strong> 
+                            <span class="float-end">R <span id="tipDisplay">0.00</span></span>
+                        </div>
+
+                        <div class="alert alert-success">
+                            <strong>Total owed:</strong> 
+                            <span class="float-end">R <span id="output">0.00</span></span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="tipcalculator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

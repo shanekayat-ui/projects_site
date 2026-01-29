@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture Gallery</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="audio.html">Audio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Tools
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="currency.html">Currency Converter</a></li>
+            <li><a class="dropdown-item" href="tipcalculator.html">Tip Calculator</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="tools.html">All Tools</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container">
+    <div class="gallery-container">
+        <h2 class="text-center mb-4 mt-3">Image Gallery</h2>
+        
+        <!-- Bootstrap Carousel -->
+        <div id="galleryCarousel" class="carousel slide mb-4" data-bs-ride="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.squarespace-cdn.com/content/v1/604a167d2901a02ddf017f3f/ecc6ddea-d7e0-47c4-a26f-63902b3170a7/DSC_0475-1-small.jpg?format=1000w" class="bg-dark bg-gradient w-100 main-image" alt="Gallery Image 1">
+                    <div class="carousel-caption d-block">
+                      <h5>Orlando, 2025</h5>
+                      <p>A curious squirrel snacking slowly</p>
+                    </div>
+                  </div>
+                <div class="carousel-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/604a167d2901a02ddf017f3f/ea625e4b-cc39-475d-b50e-66c423713296/DSC_0334-1-1-small.jpg?format=1500w" class="d-block w-100 main-image" alt="Gallery Image 2">
+                    <div class="carousel-caption d-block">
+                      <h5>Djibouti, 2015</h5>
+                      <p>A hare catches a break from the hot sun</p>
+                    </div>
+                  </div>
+                <div class="carousel-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/604a167d2901a02ddf017f3f/e8b5e817-0799-41ed-bede-7cc1732c7fd1/DSC_0717-1-small.jpg?format=1000w" class="d-block w-100 main-image" alt="Gallery Image 3">
+                    <div class="carousel-caption d-block">
+                      <h5>London, 2023</h5>
+                      <p>A fox having a trot</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/604a167d2901a02ddf017f3f/6310a223-4b93-45d1-81aa-a6dad3819f13/DSC_3025-1-small.jpg?format=1000w" class="d-block w-100 main-image" alt="Gallery Image 4">
+                    <div class="carousel-caption d-block">
+                      <h5>Cardiff, 2017</h5>
+                      <p>Puffins scouting for shelter</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/604a167d2901a02ddf017f3f/ba9bfb65-0206-486b-bccc-1f4ea4c20ed0/DSC_5133-1-small.jpg?format=1000w" class="d-block w-100 main-image" alt="Gallery Image 5">
+                    <div class="carousel-caption d-block">
+                      <h5>Orlando, 2015</h5>
+                      <p>Albatross tussle for fish</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.squarespace-cdn.com/content/v1/604a167d2901a02ddf017f3f/90b1753c-0f6c-4371-ab80-37d3a45517e5/BR3A0291-small.jpg?format=1000w" class="d-block w-100 main-image" alt="Gallery Image 6">
+                    <div class="carousel-caption d-block">
+                      <h5>Brazil, 2025</h5>
+                      <p>A dart frog on a fern</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Carousel controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        <!-- Thumbnail bar (same as before) -->
+        <div class="row thumbnail-container justify-content-center">
+            <img src="https://images.squarespace-cdn.com/content/v1/604a167d2901a02ddf017f3f/ecc6ddea-d7e0-47c4-a26f-63902b3170a7/DSC_0475-1-small.jpg?format=1000w" alt="Thumbnail 1" class="col-md-2 col-4 p-2 thumbnail active" data-slide-to="0">
+            <img src="https://images.squarespace-cdn.com/content/v1/604a167d2901a02ddf017f3f/ea625e4b-cc39-475d-b50e-66c423713296/DSC_0334-1-1-small.jpg?format=1500w" alt="Thumbnail 2" class="col-md-2 col-4 p-2 thumbnail" data-slide-to="1">
+            <img src="https://images.squarespace-cdn.com/content/v1/604a167d2901a02ddf017f3f/e8b5e817-0799-41ed-bede-7cc1732c7fd1/DSC_0717-1-small.jpg?format=1000w" alt="Thumbnail 3" class="col-md-2 col-4 p-2 thumbnail" data-slide-to="2">
+            <img src="https://images.squarespace-cdn.com/content/v1/604a167d2901a02ddf017f3f/6310a223-4b93-45d1-81aa-a6dad3819f13/DSC_3025-1-small.jpg?format=1000w" alt="Thumbnail 4" class="col-md-2 col-4 p-2 thumbnail" data-slide-to="3">
+            <img src="https://images.squarespace-cdn.com/content/v1/604a167d2901a02ddf017f3f/ba9bfb65-0206-486b-bccc-1f4ea4c20ed0/DSC_5133-1-small.jpg?format=1000w" alt="Thumbnail 5" class="col-md-2 col-4 p-2 thumbnail" data-slide-to="4">
+            <img src="https://images.squarespace-cdn.com/content/v1/604a167d2901a02ddf017f3f/90b1753c-0f6c-4371-ab80-37d3a45517e5/BR3A0291-small.jpg?format=1000w" alt="Thumbnail 6" class="col-md-2 col-4 p-2 thumbnail" data-slide-to="5">
+        </div>
+    </div>
+</div>
+   
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="gallery.js"></script>
+</body>
+</html>

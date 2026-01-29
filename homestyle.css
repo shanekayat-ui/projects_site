@@ -1,0 +1,196 @@
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(https://static.vecteezy.com/system/resources/thumbnails/006/304/593/small_2x/abstract-white-and-light-grey-geometric-square-overlapped-pattern-on-background-with-shadow-modern-silver-color-cube-shape-with-copy-space-simple-and-minimal-banner-design-eps10-vector.jpg); */
+    background-color: rgb(214, 214, 214);
+}
+
+.container {
+    background-color:transparent;
+}
+
+
+h1 {
+    margin-top: 3rem;
+    text-transform: uppercase;
+}
+
+h5 {
+    text-transform: uppercase;
+}
+
+.divider {
+  height: 1px;
+  background-color: #dee2e6; /* Bootstrap’s gray border color */
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+/* Card styles (used on multiple pages) */
+.card {
+    border-radius: 15px;
+    transition: all 0.2s;
+    /* min-width: 300px; */
+    height: 100%;  /* Cards fill their column height */
+    background-color: rgb(255, 255, 255);
+}
+
+.card-body {
+    padding: 1.5rem 2rem;  /* More space = less wrapping */
+}
+
+.card-body > :last-child {
+  margin-bottom: 0;
+}
+
+.card-title {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+
+.card-link:hover .card {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-link {
+    color: inherit;
+    display: block;  /* Makes the link fill the column */
+    height: 100%;    /* Ensures it takes full height */
+}
+
+.card-link:hover {
+    color: inherit;  /* Keeps original colors on hover too */
+}
+
+/* Make sure stock colors still work */
+.card-link .stock-card.in-stock {
+    color: #06a80e;
+}
+
+.card-link .stock-card.low-stock {
+    color: #ff9e5d;
+}
+
+.card-link .stock-card.out-of-stock {
+    color: #c41818;
+}
+
+.card.product-card {
+    min-width: 0;  /* Override the global min-width */
+    max-width: 100%;
+}
+
+.stock-text {
+    min-height: 3em;  /* Reserves space for 2 lines */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-break: normal;  /* Don't break words */
+    overflow-wrap: normal;  /* Don't break words */
+}
+
+
+
+/* Gallery styles */
+.gallery-section .card {
+    max-width: 100% !important;  /* Force override */
+    margin: 0;
+}
+
+.gallery-section img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.audio-section img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.main-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;  /* Changed from contain to cover */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background-color: #f8f9fa;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;  /* Smooth transition for all properties */
+    border: 3px solid transparent;
+}
+
+.thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail.active {
+    border-color: #06a80e;
+    transform: translateY(-5px);  /* Lifts up like the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);  /* Stronger shadow */
+}
+
+.carousel-item {
+  position: relative; /* ensure positioning context */
+}
+
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+  pointer-events: none; /* don’t block clicks */
+  z-index: 1; /* sits above the image */
+}
+
+.carousel-caption {
+  position: absolute;
+  z-index: 2; /* ensures captions appear above the gradient */
+}
+
+
+/* Quote */
+
+
+.stock-card.in-stock {
+    color: #06a80e;
+}
+
+.stock-card.low-stock {
+    color: #ff9e5d;
+}
+
+.out-of-stock {
+    color: #c41818;
+}
+
+.product-card:has(.out-of-stock) {
+    opacity: 0.6;
+
+}
+
+.product-card:has(.out-of-stock):hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.closeTag {
+    color: #000000;
+}
