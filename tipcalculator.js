@@ -16,6 +16,9 @@
 //         alert("clicked!");
 //     }
 // });
+const roundOffBtn = document.getElementById('roundOffBtn');
+const roundedDisplay = document.getElementById('roundedDisplay');
+roundedDisplay.style.visibility = 'hidden';
 
 function displayTip() {
     const inputElement = document.getElementById('bill');
@@ -37,11 +40,30 @@ function displayTip() {
         alertValidAmount.innerText = "";
     }
     
-    let tipValue = inputValue * percentValue;
+    const tipValue = inputValue * percentValue;
     document.getElementById('tipDisplay').textContent = tipValue.toFixed(2);
     document.getElementById('output').textContent = (inputValue + tipValue).toFixed(2);
     console.log("The user entered: ", inputValue);
+
+    function roundOff() {
+    const rounded = Math.round((inputValue + tipValue).toFixed(2));
+    console.log("Rounded off to ", rounded);
+    roundedDisplay.innerText = ("to R" + rounded);
+    roundedDisplay.style.visibility = 'hidden';
+    }   
+roundOff();
+
 }
+
+
+
+document.getElementById('roundOffBtn').addEventListener('click', function() {
+    roundedDisplay.style.visibility = 'visible';
+})
+
+
+
+
 
 // Add event listener for Enter key on the input field
 document.getElementById('bill').addEventListener('keypress', function(event) {
@@ -56,3 +78,4 @@ document.getElementById('percentage').addEventListener('change', function() {
     document.getElementById('percentDisplay').textContent = this.value;
     displayTip();
 });
+

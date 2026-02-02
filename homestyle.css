@@ -1,6 +1,6 @@
 /* Global styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Gabarito', Tahoma, Geneva, Verdana, sans-serif;
     /* background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(https://static.vecteezy.com/system/resources/thumbnails/006/304/593/small_2x/abstract-white-and-light-grey-geometric-square-overlapped-pattern-on-background-with-shadow-modern-silver-color-cube-shape-with-copy-space-simple-and-minimal-banner-design-eps10-vector.jpg); */
     background-color: rgb(214, 214, 214);
 }
@@ -193,4 +193,15 @@ h5 {
 
 .closeTag {
     color: #000000;
+}
+
+/* Audio  */
+
+.btn-link[aria-expanded="true"] i {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+.btn-link i {
+  transition: transform 0.3s ease;
 }

@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
-    <link rel="stylesheet" href="tipcalulator.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark shadow-sm">
   <div class="container-fluid">
@@ -29,6 +32,8 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="currency.html">Currency Converter</a></li>
             <li><a class="dropdown-item" href="tipcalculator.html">Tip Calculator</a></li>
+            <li><a class="dropdown-item" href="quote.html">Clothing Store</a></li>
+            <li><a class="dropdown-item" href="weather.html">Weather and Clocks</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="tools.html">All Tools</a></li>
           </ul>
@@ -53,44 +58,52 @@
                     <div class="card-body">
                         <h2 class="card-title text-center mb-4">Tip Calculator</h2>
                         <div class="mb-3 text-danger" id="alertValidAmount"></div>
-                        <form id="formGroup">
-                            <div class="mb-3">
-                                <label for="bill" class="form-label">Enter the Bill amount:</label>
-                                <div class="input-group">
-                                    <span class="input-group-text">R</span>
-                                    <input type="number" id="bill" step="0.01" class="form-control" placeholder="0.00">
-                                </div>
-                            </div>
-                            
-                            <div class="mb-3">
-                                <label for="percentage" class="form-label">Tip Percentage:</label>
-                                <select name="percentage" id="percentage" class="form-select">
-                                    <option value="10">10</option>
-                                    <option value="15">15</option>
-                                    <option value="20">20</option>
-                                    <option value="25">25</option>
-                                </select>
-                            </div>
-                            
-                            <button onclick="displayTip()" type="button" class="btn btn-success w-100 mb-3" id="button">Calculate Tip</button>
-                        </form>
+                          <form id="formGroup">
+                              <div class="mb-3">
+                                  <label for="bill" class="form-label">Enter the Bill amount:</label>
+                                  <div class="input-group">
+                                      <span class="input-group-text">R</span>
+                                      <input type="number" id="bill" step="0.01" class="form-control" placeholder="0.00">
+                                  </div>
+                              </div>
+                              
+                              <div class="mb-3">
+                                  <label for="percentage" class="form-label">Tip Percentage:</label>
+                                  <select name="percentage" id="percentage" class="form-select">
+                                      <option value="10">10</option>
+                                      <option value="15">15</option>
+                                      <option value="20">20</option>
+                                      <option value="25">25</option>
+                                  </select>
+                              </div>
+                              
+                              <button onclick="displayTip()" type="button" class="btn btn-success w-100 mb-3" id="button">Calculate Tip</button>
+                          </form>
                         
-                        <div class="alert alert-info">
-                            <strong><span id="percentDisplay">20</span>% tip:</strong> 
-                            <span class="float-end">R <span id="tipDisplay">0.00</span></span>
-                        </div>
+                          <div class="alert alert-info">
+                              <strong><span id="percentDisplay">10</span>% tip:</strong> 
+                              <span class="float-end">R <span id="tipDisplay">0.00</span></span>
+                          </div>
 
-                        <div class="alert alert-success">
-                            <strong>Total owed:</strong> 
-                            <span class="float-end">R <span id="output">0.00</span></span>
-                        </div>
+                          <div class="alert alert-success">
+                              <strong>Total owed:</strong> 
+                              <span class="float-end">R <span id="output">0.00</span></span>
+                          </div>
+                          <div class="row container justify-content-end align-items-center text-end">
+                            <div class="col-4">
+                            <button onclick="roundDisplay()" id="roundOffBtn" class="btn btn-success">Round off</button>
+                            </div>
+                            <div class="col-4 alert alert-transparent" id="roundedDisplay" visibility="hidden">
+                            </div>
+                          </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="tipcalculator.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+    <script src="tipcalculator.js"></script>
+  </body>
 </html>

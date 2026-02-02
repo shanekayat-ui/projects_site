@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -33,6 +35,8 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="currency.html">Currency Converter</a></li>
             <li><a class="dropdown-item" href="tipcalculator.html">Tip Calculator</a></li>
+            <li><a class="dropdown-item" href="quote.html">Clothing Store</a></li>
+            <li><a class="dropdown-item" href="weather.html">Weather and Clocks</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="tools.html">All Tools</a></li>
           </ul>
@@ -42,7 +46,7 @@
   </div>
 </nav>
 
-<div class="container">
+<!-- <div class="container">
     <div class="row">
         <h1 class="text-center mt-5 mb-2">Original Songs</h5>
     </div>
@@ -60,7 +64,81 @@
             <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6Ba4iE707nQdyL2XhEKrTy?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
     </div>
-</div>
+</div> -->
+
+<div class="container">
+  <h3 class="m-3">A collection of different Audio and musical projects.</h3>
+  <div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-light d-flex justify-content-between align-items-center w-100" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Original Songs
+          <i class="bi bi-chevron-down"></i>
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse row justify-content-center p-1" aria-labelledby="headingOne" data-bs-parent="#accordion">
+      <div class="card-body">
+        Composed, recorded and produced by me.
+      </div>
+      <div class="col-md-6 col-lg-4">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6cW0Icd3H2WNBAljIz4xBb?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/3VM16fDnHORyPoIB3w9a34?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="col-md-6 col-lg-4">
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/album/6Ba4iE707nQdyL2XhEKrTy?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-light d-flex justify-content-between align-items-center w-100 collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Mixing & Production
+          <i class="bi bi-chevron-down"></i>
+        </button>
+      </h5>
+    </div>
     
+    <div id="collapseTwo" class="collapse row justify-content-center p-1" aria-labelledby="headingTwo" data-bs-parent="#accordion">
+    <div class="card-body">
+          Audio production work for the band "Sons of Shem".
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0DrnZC6po1s2Nawt8kCTtd?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>      
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2bZSh5kmXBGCBP7fTzj9yK?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>      
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5ySempBQ6uPXpJxKFOQNVW?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>    
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-light d-flex justify-content-between align-items-center w-100 collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Guest Performances
+            <i class="bi bi-chevron-down"></i>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse row justify-content-center p-1" aria-labelledby="headingThree" data-bs-parent="#accordion">
+      <div class="card-body">
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2tP09GNySz8sfMYUccCXTb?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>      
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="audio.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
 </body>
 </html>
